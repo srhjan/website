@@ -27,15 +27,21 @@ export default () => {
         maxWidth: "100%"
       }}
     >
-      <nav className="flex justify-center items-center text-white font-bold">
+      <nav className="flex justify-center items-center text-white font-bold title">
         <ActiveLink href="/" activeClassName="active">
           <NavLink>
             <img src="/home.png" style={{ width: 20 }} />
           </NavLink>
         </ActiveLink>
-        <NavLink>Alimentation</NavLink>
-        <NavLink>Comportement</NavLink>
-        <NavLink>Jouets</NavLink>
+        <ActiveLink href="/alimentation" activeClassName="text-pink-200">
+          <NavLink>Alimentation</NavLink>
+        </ActiveLink>
+        <ActiveLink href="/comportement" activeClassName="text-pink-200">
+          <NavLink>Comportement</NavLink>
+        </ActiveLink>
+        <ActiveLink href="/jouets" activeClassName="text-pink-200">
+          <NavLink>Jouets</NavLink>
+        </ActiveLink>
         <ActiveLink href="/team-cat" activeClassName="text-pink-200">
           <NavLink>La team Cat</NavLink>
         </ActiveLink>
