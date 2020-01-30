@@ -1,15 +1,9 @@
 import React from "react";
 import Menu from "../components/Menu";
 import Banner from "../components/Banner";
-
-const TopArticles = () => {
-  return (
-    <div
-      className=" bg-white rounded shadow-md border-t-8 border-blue-600"
-      style={{ height: 300, width: 200 }}
-    ></div>
-  );
-};
+import Title from "../components/Title";
+import ArticleOverview from "../components/ArticleOverview";
+import OthersArticles from "../components/OthersArticles";
 
 const Description = ({ children }) => {
   return (
@@ -24,9 +18,7 @@ export default () => {
     <div>
       <Menu />
       <Banner imgBanner="/chat-mew.jpg" title="Bienvenue dans la Mewsphère" />
-      <h1 className="text-center text-black mt-12" style={{ fontSize: 40 }}>
-        Top 3 des articles les plus lus
-      </h1>
+      <Title>Top 3 des articles les plus lus</Title>
       <div className="w-full flex" style={{ height: 415 }}>
         <div
           className="flex"
@@ -36,9 +28,9 @@ export default () => {
             marginTop: 30
           }}
         >
-          <TopArticles />
-          <TopArticles />
-          <TopArticles />
+          <ArticleOverview />
+          <ArticleOverview />
+          <ArticleOverview />
         </div>
       </div>
       <div
@@ -98,23 +90,7 @@ export default () => {
           </Description>
         </div>
       </div>
-      <div className="bg-gray-200 w-full flex" style={{ height: 470 }}>
-        <div className="flex flex-col w-full">
-          <h2
-            className="w-full text-center text-pink-500 mt-12"
-            style={{ fontSize: 40 }}
-          >
-            D'autres articles
-          </h2>
-
-          <div className="flex w-full justify-around mt-12">
-            <TopArticles />
-            <TopArticles />
-            <TopArticles />
-            <TopArticles />
-          </div>
-        </div>
-      </div>
+      <OthersArticles />
     </div>
   );
 };

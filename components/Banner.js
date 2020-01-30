@@ -32,7 +32,7 @@ export default ({ imgBanner, title }) => {
           <h1
             className="text-white font-light"
             style={{
-              fontSize: 50,
+              fontSize: 70,
               margin: "15px 20px"
             }}
           >

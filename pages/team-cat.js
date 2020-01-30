@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "../components/Menu";
 import Banner from "../components/Banner";
+import Title from "../components/Title";
 
 const PresentationHeading = ({ children }) => {
   return (
@@ -83,10 +84,7 @@ export default () => {
     <div>
       <Menu />
       <Banner imgBanner="/team-cat.jpg" title="La Team Cat" />
-
-      <h2 className="text-black text-center text-3xl mt-8 mb-2">
-        Mais qui ce cache derrière ce blog ?
-      </h2>
+      <Title>Mais qui ce cache derrière ce blog ?</Title>
 
       <BlockPresentation presentationImg="/sarah-team-cat.jpg">
         J’ai 25 ans et je suis la créatrice et rédactrice de ce blog. Toujours
